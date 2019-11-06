@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>FSA Dashboard</title>
+
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <!-- Graph CSS -->
+    <link rel="stylesheet" type="text/css" href="Sunburst.css">
+    <link rel="stylesheet" type="text/css" href="Bar.css">
+    <link rel="stylesheet" type="text/css" href="Map.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+    <div class="header">
+      <h1>Interactive FSA Portfolio</h1>
+    </div>
+
+
+    <section id="choro_chart">
+      <div class="container-fluid">
+        <div class="row">
+         <select id = "dropdown"></select>
+         <div id = "tooltip">
+             <h3><span id = "state">&nbsp;</span></h3>
+             <h5><span id = "data">&nbsp;</span></h5>
+         </div>
+          <div style="text-align:center"; class="col-lg-8 mx-auto">
+                <script src="Map.js"></script>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- buttons -->
+  <!--  <div id="buttons">
+        <button type="button" class="panning up"><i class="fa fa-arrow-up"></i></button>
+        <button type="button" class="panning down"><i class="fa fa-arrow-down"></i></button>
+        <button type="button" class="panning left"><i class="fa fa-arrow-left"></i></button>
+        <button type="button" class="panning right"><i class="fa fa-arrow-right"></i></button>
+        <button type="button" class="zooming in"><i class="fa fa-plus"></i></button>
+        <button type="button" class="zooming out"><i class="fa fa-minus"></i></button>
+    </div> -->
+    <section id="Sunburst" class="bg-light">
+      <div class="container-fluid">
+        <div id="Sunburst">
+        <div class="row">
+          <div style="text-align:center"; class="col-lg-8 mx-auto">
+            <ul style="list-style-type:none;">
+            </ul>
+              <script src='Sunburst.js'></script>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <section id="BChart" class ="bg-light">
+      <div class="container-fluid" >
+       <div id="BChart">
+        <div class="row">
+          <div style="text-align:center"; class="col-lg-8 mx-auto">
+            <p class="lead"></p>
+            <ul style="list-style-type:none;">
+            </ul>
+            <script src='Bar.js'></script>
+          </div>
+        </div>
+       </div>
+      </div>
+    </section>
+
+
+
+</body>
+</html>

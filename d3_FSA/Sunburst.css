@@ -1,0 +1,25 @@
+#Sunburst {
+    position: relative;
+    font-family: Sans-serif;
+    font-size: 12px;
+      background-color: #F3FEFE;
+
+}
+    .slice {
+        cursor: pointer;
+    }
+
+    .slice .main-arc {
+        stroke: #fff;
+        stroke-width: .5px;
+    }
+
+    .slice .hidden-arc {
+        fill: none;
+    }
+
+    .slice text {
+        pointer-events: none;
+        dominant-baseline: middle;
+        text-anchor: middle;
+    }
